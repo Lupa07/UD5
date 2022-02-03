@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pagina Central Cesur</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="navbar">
+        <nav>
+            <ul>
+
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="registro.html">REGISTRO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div style="text-align: center;">
+        <img id="logolupa" src="nuevologo.png" width="100px" height="125px" alt='logo de marca Lupa'>
+        <p id='textoLogoLupa' style="font-size: 10px;">Logo Lupa</p>
+    </div>
+
+
+
+    <section>
+        <div class="productos">
+            <div style="text-align: center;">
+                <audio id="reproductoraudio" controls src="Cancion_Gallina.mp3" type="audio/mpeg"></audio>
+                <button onclick="document.getElementById('reproductoraudio').play()"><img src="play.png"
+                    width="44px" height="44px"></button>
+                <button onclick="document.getElementById('reproductoraudio').pause()"><img src="pausa.png"
+                    width="44px" height="44px"></button>
+                
+               <dialog id='letracancion'>
+                <p>
+                    <button onclick="document.getElementById('letracancion').close();">Cerrar</button>
+                </p>
+                <p>Decapitamo' una gallina<br>
+                    Y la llenamos de pastillas y cocaína [Oh<br>
+                    Y la llevamos pa' la disco<br>
+                    Y puso un huevo por lo visto en la tarima* [Yeh<br>
+                    Y la metimos en la cocina<br>
+                    Y nos comimos la gallina y alucinas [Wo-oh<br>
+                    Y nos marchamos pa' la disco<br>
+                    Y lo primero que hemos visto es la gallina—es la gallina—es la gallina<br>
+                    [es la gallina—es la gallina—es la gallina]<br></p>
+                <p style="font-size: 8px;">*tarima: dicese de la zona de baile del lugar de ocio, normalmente de madera</p>
+
+                </dialog>
+                <div style="text-align: center;">
+                    <p>Para ver la letra, pulse el boton:</p>
+                    <button class="botonletra" onclick="document.getElementById('letracancion').showModal();">Abrir</button>   
+                </div>
+            </div>
+            
+            <div class="cursos">
+                <div class="titprod"> Los mejores cursos de Cesur </div>
+
+                <div class="containertext">
+                    <video id="reproductor1" width=" 100%" ; height="250px" ;>
+                        <source src="Seoul.mp4" type="video/mp4">
+                    </video>
+                    <div class="inside">
+                        <button onclick="document.getElementById('reproductor1').play()"><img src="play.png"
+                                width="20px" height="20px"></button>
+                        <button onclick="document.getElementById('reproductor1').pause()"><img src="pausa.png"
+                                width="20px" height="20px"></button>
+                        <button onclick="document.getElementById('reproductor1').volume-=0.1">-</button>
+                        <button onclick="document.getElementById('reproductor1').volume+=0.1">+</button>
+                    </div>
+                </div>
+                <div class="containertext">
+                    <video preload="auto" id="reproductor2" width=" 100%" ; height="250px" ;>
+                        <source src="Lemon - 82602.mp4" type="video/mp4">
+                    </video>
+                    <div class="inside">
+                        <button onclick="document.getElementById('reproductor2').play()"><img src="play.png"
+                                width="20px" height="20px"></button>
+                        <button onclick="document.getElementById('reproductor2').pause()"><img src="pausa.png"
+                                width="20px" height="20px"></button>
+                        <button onclick="document.getElementById('reproductor2').volume-=0.1">-</button>
+                        <button onclick="document.getElementById('reproductor2').volume+=0.1">+</button>
+                    </div>
+                </div>
+                <div class="containertext">
+                    <img class="carrusel">
+                    
+                </div>
+            </div>
+
+            <div class="productosNuevos">
+
+                <div class="titNuevos">Nuevos Cursos</div>
+                <dialog id='dialogo'>
+                    <p>
+                        <button onclick="document.getElementById('dialogo').close();">Cerrar</button>
+                    </p>
+                    <div class="containertext">
+                        <img class="imageprod2" id="imagenEstilo" src="dj.jpg">
+                        <div class="inside">
+                            <div class="price">3.000€</div>
+                            <div class="textprod">Solicitar</div>
+                        </div>
+                    </div>
+                    <div class="containertext">
+                        <img class="imageprod2" id="imagenEstilo" src="fotografia.jpg">
+                        <div class="inside">
+                            <div class="price">3.000€</div>
+                            <div class="textprod">Solicitar</div>
+                        </div>
+                    </div>
+                    <div id="cocina" class="containertext">
+                        <img class="imageprod2" id="imagenEstilo" src="cocinareducida.jpg">
+                        <div class="inside">
+                            <div class="price">3.000€</div>
+                            <div class="textprod">Solicitar</div>
+                        </div>
+                    </div>
+                    
+                    
+
+                </dialog>
+                <div style="text-align: center;">
+                    <button class="botonabrir" onclick="document.getElementById('dialogo').showModal();">Abrir</button>   
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h6>Política de Privacidad en Cesur Formacion </h6>
+
+    </footer>
+   
+<script>
+   
+</script>
+</body>
+
+</html>
